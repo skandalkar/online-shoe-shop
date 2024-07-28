@@ -161,7 +161,6 @@ button.normal {
     width: 100%;
     height: auto;
     padding: 10px;
-
     text-align: center;
 }
 .slide-banner h3 a {
@@ -176,6 +175,5 @@ button.normal {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #f8f8f8;
     margin-top: 0px;
 }
