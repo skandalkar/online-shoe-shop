@@ -67,7 +67,6 @@ button.normal {
     transition: 0.3s;
 }
 
-
 #header {
     background-color: #f5f5f5;
 }
@@ -155,7 +154,7 @@ button.normal {
     transition: all ease 0.3s;
 }
 
-.slide-banner{
+.slide-banner {
     display: block;
     background-color: #88c8bc;
     width: 100%;
@@ -163,6 +162,7 @@ button.normal {
     padding: 10px;
     text-align: center;
 }
+
 .slide-banner h3 a {
     color: rgb(255, 255, 255);
     font-size: 25px;
@@ -170,10 +170,72 @@ button.normal {
 }
 
 #hero {
+    padding: 0;
+}
+
+#hero .background-slider {
+    position: relative;
+}
+
+#hero .background-slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#slide-1 {
+    background-image: url('Assets/Images/backgrounds/img_bg_1.jpg');
+}
+
+#slide-2 {
+    background-image: url('Assets/Images/backgrounds/img_bg_2.jpg');
+}
+
+#slide-3 {
+    background-image: url('Assets/Images/backgrounds/img_bg_3.jpg');
+}
+
+#hero .background-slider .slide .inner-text {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.inner-text {
+    background-color: hsla(0, 0%, 100%, 0.027);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.inner-text h1 {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+#banner {
     width: 100%;
     height: auto;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 0px;
+    padding: 10px;
+}
+
+#banner p {
+    font-size: 20px;
 }
